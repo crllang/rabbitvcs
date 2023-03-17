@@ -661,7 +661,7 @@ class GitLog(Log):
         Log.__init__(self, path)
 
         self.git = self.vcs.git(path)
-        self.limit = 500
+        self.limit = 100
 
         self.get_widget("stop_on_copy").hide()
 
